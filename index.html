@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <h1 class="title">Multiplication Table Generator</h1>
+    <div id="tabs">
+        <ul id="tabList">
+            <li><a href="#inputTab">Input</a></li>
+        </ul>
+        <div id="inputTab">
+            <form id="tableForm">
+                <label for="beginH">Begin Horizontal:</label>
+                <input type="number" id="beginH" name="beginH" required>
+                <div id="beginH_slider"></div><br><br>
+                <label for="endH">End Horizontal:</label>
+                <input type="number" id="endH" name="endH" required>
+                <div id="endH_slider"></div><br><br>
+                <label for="beginV">Begin Vertical:</label>
+                <input type="number" id="beginV" name="beginV" required>
+                <div id="beginV_slider"></div><br><br>
+                <label for="endV">End Vertical:</label>
+                <input type="number" id="endV" name="endV" required>
+                <div id="endV_slider"></div><br><br>
+                <button type="submit">Generate Table</button>
+                <button type="reset">Reset</button>
+            </form>
+            <div id="errorMessage" style="color: blue;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
